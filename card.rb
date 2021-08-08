@@ -5,7 +5,7 @@ class Card
         @type = type
     end
 
-    # Card.new('Ace of Spades')
+    
 
 
 end
