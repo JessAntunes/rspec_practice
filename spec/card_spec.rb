@@ -6,9 +6,15 @@ RSpec.describe Card do
     # rspec meant to be sure readable. it is a method and accepts an argument that is a string
     # describe expected behavior NOT implementation.
     # specify 'has a type' do same as it
-    it 'has a type' do
+
+    it 'has a rank' do
         card = Card.new('Ace', 'Spades')
         expect(card.rank).to eq('Ace')
+    end
+
+    it 'has a suit' do
+        card = Card.new('Ace', 'Spades')
         expect(card.suit).to eq('Spades')
     end
+
 end
