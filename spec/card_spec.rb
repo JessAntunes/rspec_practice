@@ -3,6 +3,7 @@ require 'spec_helper'
 
 RSpec.describe Card do
     # before runs before each example
+    # keeps code dryer
 
     before do
         @card = Card.new('Ace', 'Spades')
@@ -19,5 +20,7 @@ RSpec.describe Card do
     it 'has a suit' do
         expect(@card.suit).to eq('Spades')
     end
+
+    # must use @ so the variable can be used outside the before hook
 
 end
