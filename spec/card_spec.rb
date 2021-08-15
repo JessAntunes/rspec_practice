@@ -6,7 +6,7 @@ RSpec.describe Card do
     # keeps code dryer
 
     before do
-        @card = Card.new('Ace', 'Spades')
+        @card = Card.new('Ace', 'Spades', 1)
     end
     # example group is a group of similar tests
     # rspec meant to be sure readable. it is a method and accepts an argument that is a string
@@ -21,6 +21,9 @@ RSpec.describe Card do
         expect(@card.suit).to eq('Spades')
     end
 
+    it 'has a value' do
+        expect(@card.value).to eq(1)
+    end
     # must use @ so the variable can be used outside the before hook
 
 end
